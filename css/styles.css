@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-font: 'Space Mono', monospace;
+    --logo-font: 'Inconsolata', monospace;
+    --footer-font: 'Montserrat', sans-serif;
+    --dark-gray:#333333;
+    --gray: #4F4F4F;
+    --light-gray: #BDBDBD;
+}
+
+body {
+    font-family: var(--primary-font);
+}
+
+.container {
+    max-width: 375px;
+    margin: 0  auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: var(--logo-font);
+    text-transform: uppercase;
+    letter-spacing: -0.08em;
+    color: var(--dark-gray);
+    margin: 20px 0px 64px 24px;
+}
+
+.image-wrapper {
+    max-width: 286.83px;
+    min-height: 238px;
+    margin: 0px 44.17px 60px 44px;
+}
+
+.image-wrapper img {
+    width: 100%;
+}
+
+.content {
+    margin: 0px 1px 114px 18px;
+}
+
+.content h1 {
+    font-size: 48px;
+    color: var(--dark-gray);
+    letter-spacing: -0.035em;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.content p {
+    font-size: 18px;
+    color: var(--gray);
+    letter-spacing: -0.035em;
+    max-width: 328px;
+    margin-bottom: 66px;
+}
+
+.content button {
+    padding: 24px 43px 23px 43px;
+    background-color: var(--dark-gray);
+    color: white;
+    border: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: inherit;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--footer-font);
+    color: var(--light-gray);
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 760px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .image-wrapper {
+        max-width: 539.22px;
+        min-height: 447.43px;
+        margin: 0 auto;
+    }
+
+    .content {
+        margin: 10px 50px 114px 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content-wrapper {
+        display: flex;
+        margin-bottom: 308px;
+    }
+    .logo {
+        margin: 40px 0px 200px 77px
+    }
+
+    .content h1 {
+        font-size: 64px;
+        width: 586px;
+    }
+    .content p {
+        font-size: 24px;
+        max-width: 381px;
+        letter-spacing: -0.035em;
+        margin-bottom: 64px;
+    }
+}
+    
+    
